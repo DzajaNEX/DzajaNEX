@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Square {
+    public static void main(String [] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Unesi broj stranice: ");
+        int num = sc.nextInt();
+        System.out.println("Ukupan broj kvadrata: " + square(num));
+    }
+    public static int square(int num)
+    {
+        return num * num;
+    }
+}
