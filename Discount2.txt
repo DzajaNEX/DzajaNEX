@@ -1,0 +1,12 @@
+public class DiscountTest {
+    public DiscountTest() {
+    }
+
+    public static void main(String[] args) {
+        double amount = 1000;
+        Discounter discounter1 = new EasterDiscounter();
+        double discountedAmount1 = discounter1.applyDiscount(amount);
+        System.out.println(discountedAmount1);
+        Discounter discounter2 = new NewYearDiscounter();
+        double discountedAmount2 = discounter2.applyDiscount(amount);
+        System.out.println(discountedAmount2);
